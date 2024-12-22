@@ -18,6 +18,7 @@ public class halfpyramid{
             System.out.println();
         }
 
+        sc.close();
 
     }
 
