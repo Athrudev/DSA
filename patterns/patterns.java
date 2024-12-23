@@ -209,6 +209,32 @@ public class patterns {
             }
         }
 
+
+        public static void inverted_number(int n){
+
+            for(int i=n;i>=1;i--){
+                for(int j=1;j<=i;j++){
+                    System.out.print(j);
+                }
+                System.out.println("");
+            }
+        }
+
+        public static void inverted_rotated_number(int n){
+
+            for(int i=n;i>=1;i--){
+
+                for(int s=1;s<=(n-i);s++){
+                    System.out.print(" ");
+                }
+
+                for(int j=1;j<=i;j++){
+                    System.out.print(j);
+                }
+                System.out.println("");
+            }
+        }
+
     public static void main(String[] args) {
         int n=5;
        /*  System.out.println("\n1.Star pattern\n");
@@ -230,10 +256,19 @@ public class patterns {
         System.out.println("\n9.Diamond\n");
         diamond(n); 
         System.out.println("\n10.Butterfly\n");
-        butterfly(n); */
+        butterfly(n);
 
         System.out.println("\n11.Floyds pattern\n");
         floyds_trianlge(n);
+
+        System.out.println("\n12.inverted number pattern\n");
+        inverted_number(n); */
+
+        System.out.println("\n13.Inverted Rotated Number\n");
+        inverted_rotated_number(n);
+
+
+
 
 
 
