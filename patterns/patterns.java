@@ -59,6 +59,24 @@ public class patterns {
         }
 
 
+
+        public static void hollow_rect(int n){
+            for(int i=1;i<=n;i++){
+                for(int j=1;j<=n;j++)
+                {
+                    if(i==1 || i==n || j==1 || j==n){
+
+                        System.out.print("*");
+
+                    }else{
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println("");
+            }
+        }
+
+
     public static void main(String[] args) {
         int n=5;
         System.out.println("\n1.Star pattern\n");
@@ -69,7 +87,9 @@ public class patterns {
         half_pyramid_no(n);
         System.out.println("\n4.Half pyramid character pattern\n");
         char_pyramid(n);
-        System.out.println("\n4.zero one pattern\n");
+        System.out.println("\n5.zero one pattern\n");
         zero_one(n);
+        System.out.println("\n6.Hollow Rectangle\n");
+        hollow_rect(n);
     }
 }
