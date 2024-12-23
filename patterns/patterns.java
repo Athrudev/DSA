@@ -260,6 +260,30 @@ public class patterns {
             }
         }
 
+
+        public static void palindromic_number_pyramid(int n){
+
+            //int val=1;
+
+
+            for(int i=1;i<=n;i++){
+                for(int s=1;s<=(n-i);s++){
+                    System.out.print(" ");
+                }
+                    
+                for(int k=i;k>=1;k--){
+                    System.out.print(k);
+                }
+                for(int k=2;k<=i;k++){
+                    System.out.print(k);
+                }
+
+                System.out.println("");
+                
+
+            }
+        }
+
     public static void main(String[] args) {
         int n=5;
         /* System.out.println("\n1.Star pattern\n");
@@ -287,13 +311,12 @@ public class patterns {
         System.out.println("\n12.inverted number pattern\n");
         inverted_number(n);
         System.out.println("\n13.Inverted Rotated Number\n");
-        inverted_rotated_number(n); */
-
+        inverted_rotated_number(n);
         System.out.println("\n14.Number Pyramid\n");
-        number_pyrmaid(n);
+        number_pyrmaid(n); */
 
-
-
+        System.out.println("\n15.Palindromic number pyramid\n");
+        palindromic_number_pyramid(n);
 
 
 
