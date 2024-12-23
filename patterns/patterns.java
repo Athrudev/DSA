@@ -193,9 +193,25 @@ public class patterns {
             }
         }
 
+
+
+
+
+        public static void floyds_trianlge(int n){
+            int c=1;
+            for(int i=1;i<=n;i++){
+                for(int j=1;j<=i;j++){
+                    System.out.print(c+" ");
+                    c++;
+                }
+
+                System.out.println("");
+            }
+        }
+
     public static void main(String[] args) {
         int n=5;
-        /* System.out.println("\n1.Star pattern\n");
+       /*  System.out.println("\n1.Star pattern\n");
         star_pattern(n);
         System.out.println("\n2.Inverted Star pattern\n");
         inverted_star_patten(n);
@@ -212,10 +228,12 @@ public class patterns {
         System.out.println("\n8.hollow rhombus\n");
         hollow_rhombus(n);
         System.out.println("\n9.Diamond\n");
-        diamond(n); */
-
+        diamond(n); 
         System.out.println("\n10.Butterfly\n");
-        butterfly(n);
+        butterfly(n); */
+
+        System.out.println("\n11.Floyds pattern\n");
+        floyds_trianlge(n);
 
 
 
