@@ -23,11 +23,23 @@ public class patterns {
         }
 
 
+        public static void half_pyramid_no(int n){
+            for(int i=1;i<=n;i++){
+                for(int j=1;j<=i;j++){
+                    System.out.print(j);
+                }
+                System.out.println("");
+            }
+        }
+
+
     public static void main(String[] args) {
         int n=5;
         System.out.println("\nStar pattern\n");
         star_pattern(n);
         System.out.println("\nInverted Star pattern\n");
         inverted_star_patten(n);
+        System.out.println("\nHalf pyramid number pattern\n");
+        half_pyramid_no(n);
     }
 }
