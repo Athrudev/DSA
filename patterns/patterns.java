@@ -95,9 +95,30 @@ public class patterns {
         }
 
 
+        public static void hollow_rhombus(int n){
+            for(int i=1;i<=n;i++){
+
+                for(int s=1;s<=(n-i);s++){
+                    System.out.print(" ");
+                }
+
+
+                for(int j=1;j<=n;j++){
+                    if(i==1 || j==1 || i==n || j==n){
+                        System.out.print("*");
+                    }else{
+                        System.out.print(" ");
+                    }
+                }
+
+                System.out.println("");
+            }
+        }
+
+
     public static void main(String[] args) {
         int n=5;
-       /*  System.out.println("\n1.Star pattern\n");
+        /* System.out.println("\n1.Star pattern\n");
         star_pattern(n);
         System.out.println("\n2.Inverted Star pattern\n");
         inverted_star_patten(n);
@@ -108,9 +129,12 @@ public class patterns {
         System.out.println("\n5.zero one pattern\n");
         zero_one(n);
         System.out.println("\n6.Hollow Rectangle\n");
-        hollow_rect(n); */
-
+        hollow_rect(n);
         System.out.println("\n7.Solid rhombus\n");
-        rhombus(n);
+        rhombus(n); */
+
+
+        System.out.println("\n7.hollow rhombus\n");
+        hollow_rhombus(n);
     }
 }
