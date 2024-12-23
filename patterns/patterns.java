@@ -237,7 +237,7 @@ public class patterns {
 
     public static void main(String[] args) {
         int n=5;
-       /*  System.out.println("\n1.Star pattern\n");
+        System.out.println("\n1.Star pattern\n");
         star_pattern(n);
         System.out.println("\n2.Inverted Star pattern\n");
         inverted_star_patten(n);
@@ -262,7 +262,7 @@ public class patterns {
         floyds_trianlge(n);
 
         System.out.println("\n12.inverted number pattern\n");
-        inverted_number(n); */
+        inverted_number(n);
 
         System.out.println("\n13.Inverted Rotated Number\n");
         inverted_rotated_number(n);
