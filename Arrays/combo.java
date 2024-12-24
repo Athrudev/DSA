@@ -84,7 +84,7 @@ public class combo {
     }
 
 
-
+    //this is an prefix approach this takes O(n^2) time complexity
     public static void prefix_approach_sum(int a[]){
         int n=a.length;
         int cs=0;
@@ -110,17 +110,50 @@ public class combo {
     }
 
 
+    public static void kedans_approach(int a[]){
+        int n=a.length;
+        int cs=0;
+        boolean negative=true;
+        int ms=Integer.MIN_VALUE;
+        int min=Integer.MIN_VALUE;
+
+        for(int i=0;i<n;i++){
+            if(a[i]>=0){
+                negative=false;
+            }
+            min=Math.max(min,a[i]);
+
+        }
+        if(negative){
+                System.out.println("Max sum of an subarray using kedan's algorithm (all negative):"+min);
+        }
+        if(!negative){
+            for(int i=0;i<n;i++){
+                cs=cs+a[i];
+                if(cs<0){
+                    cs=0;
+                }
+                ms=Math.max(cs,ms);
+            }
+            System.out.println("Max sum of an subarray using kedan's algorithm:"+ms);
+        }
+        
+    }
+
+
 
     public static void main(String[] args) {
 
         int a[]={2,4,6,8,10};
-        //int a2[]={};
+        int a2[]={-1,-2,-3,-4};
 
         //reverse_array(a);
         //print_pairs(a);
         //print_sub_arrays(a);
         //brute_force_approach_max_subarray(a);
-        prefix_approach_sum(a);
+        //prefix_approach_sum(a);
+        kedans_approach(a);
+        kedans_approach(a2);
 
         
     }
