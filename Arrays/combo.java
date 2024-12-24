@@ -61,6 +61,8 @@ public class combo {
         }
     }
 
+    //this is a brute force approach for finding the max sum of an sub array
+    //this appraoch takes O(n^3) time complexity
     public static void brute_force_approach_max_subarray(int a[]){
         int n=a.length;
         int cs=0;
@@ -78,7 +80,7 @@ public class combo {
         }
 
 
-        System.out.println("Maximum sum of an sub array is:"+ms);
+        System.out.println("Maximum sum of an sub array using brute force approach:"+ms);
     }
 
 
@@ -87,7 +89,23 @@ public class combo {
         int n=a.length;
         int cs=0;
         int ms=Integer.MIN_VALUE;
-        
+
+        int prefix[]=new int[n];
+        prefix[0]=a[0];
+        for(int i=1;i<n;i++){
+            prefix[i]=prefix[i-1]+a[i];
+        }
+
+
+        for(int i=0;i<n;i++){
+            int start=i;
+            for(int j=i+1;j<n;j++){
+                int end=j;
+                cs=start==0 ? prefix[end] : prefix[end]-prefix[start-1];
+            }
+            ms=Math.max(ms,cs);
+        }
+        System.out.println("Max sum of an subarray using prefix approach: "+ms);
 
     }
 
