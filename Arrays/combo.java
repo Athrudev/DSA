@@ -31,14 +31,15 @@ public class combo {
         for(int i=0;i<a.length;i++){
             System.out.print(a[i]+" ");
         }
-        
-        
+        System.out.println("");
+  
     }
 
 
 
     public static void print_pairs(int a[]){
         int n=a.length;
+        System.out.println("all possible pairs in the array:");
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 System.out.print("("+a[i]+","+a[j]+")");
@@ -50,6 +51,7 @@ public class combo {
 
     public static void print_sub_arrays(int a[]){
         int n=a.length;
+        System.out.println("all possible subarray in the array:");
         for(int i=0;i<n;i++){
             for(int j=i+1;j<n;j++){
                 for(int k=i;k<=j;k++){
@@ -122,7 +124,6 @@ public class combo {
                 negative=false;
             }
             min=Math.max(min,a[i]);
-
         }
         if(negative){
                 System.out.println("Max sum of an subarray using kedan's algorithm (all negative):"+min);
@@ -147,13 +148,13 @@ public class combo {
         int a[]={2,4,6,8,10};
         int a2[]={-1,-2,-3,-4};
 
-        //reverse_array(a);
-        //print_pairs(a);
-        //print_sub_arrays(a);
-        //brute_force_approach_max_subarray(a);
-        //prefix_approach_sum(a);
+        reverse_array(a);
+        print_pairs(a);
+        print_sub_arrays(a);
+        brute_force_approach_max_subarray(a);
+        prefix_approach_sum(a);
         kedans_approach(a);
-        kedans_approach(a2);
+        kedans_approach(a2);//for all negative members
 
         
     }
