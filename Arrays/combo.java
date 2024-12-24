@@ -15,8 +15,6 @@ public class combo {
 
 
 
-
-
     public static void reverse_array(int a[]){
         int n=a.length;
         int f=0,l=n-1;

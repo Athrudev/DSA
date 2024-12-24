@@ -1,0 +1,175 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "Arrays.basic",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "binary",
+            "request": "launch",
+            "mainClass": "Arrays.binary",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "combo",
+            "request": "launch",
+            "mainClass": "Arrays.combo",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "largest",
+            "request": "launch",
+            "mainClass": "Arrays.largest",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "maxsubarray",
+            "request": "launch",
+            "mainClass": "Arrays.maxsubarray",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "pairs",
+            "request": "launch",
+            "mainClass": "Arrays.pairs",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "reverse",
+            "request": "launch",
+            "mainClass": "Arrays.reverse",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "subarray",
+            "request": "launch",
+            "mainClass": "Arrays.subarray",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "butterfly",
+            "request": "launch",
+            "mainClass": "butterfly",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "diamond",
+            "request": "launch",
+            "mainClass": "diamond",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "floydspattern",
+            "request": "launch",
+            "mainClass": "floydspattern",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "halfchar",
+            "request": "launch",
+            "mainClass": "halfchar",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "halfnum",
+            "request": "launch",
+            "mainClass": "halfnum",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "halfnumrev",
+            "request": "launch",
+            "mainClass": "halfnumrev",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "halfpyramid",
+            "request": "launch",
+            "mainClass": "halfpyramid",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "hollowrect",
+            "request": "launch",
+            "mainClass": "hollowrect",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "inverted",
+            "request": "launch",
+            "mainClass": "inverted",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "inverteddownrot",
+            "request": "launch",
+            "mainClass": "inverteddownrot",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "invertedhalfnum",
+            "request": "launch",
+            "mainClass": "invertedhalfnum",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "invertedrotstar",
+            "request": "launch",
+            "mainClass": "invertedrotstar",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "patterns",
+            "request": "launch",
+            "mainClass": "patterns",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "srhombus",
+            "request": "launch",
+            "mainClass": "srhombus",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
+            "name": "zeroone",
+            "request": "launch",
+            "mainClass": "zeroone",
+            "projectName": "dsa_7751c099"
+        }
+    ]
+}
