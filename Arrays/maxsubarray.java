@@ -1,6 +1,10 @@
 package Arrays;
 import java.util.*;
 
+
+//this is brute force approach it has time complexity of O(n^3)
+//we have another approach like prefix sum to solve this problem
+
 public class maxsubarray {
 
 
