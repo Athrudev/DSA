@@ -1,7 +1,6 @@
 package Arrays;
 import java.util.*;
 
-import java.util.*;
 public class trappedrain{
 
     public static int trappedRainWater(int height[],int width){
