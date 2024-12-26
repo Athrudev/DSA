@@ -1,6 +1,6 @@
-package Arrays;
 
-public class practiceq {
+
+public class pq1 {
 
 
     public static boolean Question1(int nums[]){
