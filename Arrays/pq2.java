@@ -35,10 +35,22 @@ public class pq2 {
         int nums3[]={1};
         int target3=0;
 
-
+        long starttime=System.nanoTime();
         System.out.println("test case 1:"+solution(nums1,target1));
+        long endtime=System.nanoTime();
+        long duration=endtime-starttime;
+        System.out.println("duration:"+duration);
+        
+
+        starttime=System.nanoTime();
         System.out.println("test case 2:"+solution(nums2,target2));
+        endtime=System.nanoTime();
+        System.out.println("duration:"+duration);
+
+        starttime=System.nanoTime();
         System.out.println("test case 3:"+solution(nums3,target3));
+        endtime=System.nanoTime();
+        System.out.println("duration:"+duration);
         
     }
 }
