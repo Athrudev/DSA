@@ -39,9 +39,10 @@ public class basicSort {
     }
 
 
+
+
     public static void selectionSort(int a[]){
         int n=a.length;
-        int min=Integer.MAX_VALUE;
 
         for(int i=0;i<n-1;i++){
             int minPos=i;
@@ -57,16 +58,37 @@ public class basicSort {
         }
     }
 
+
+
+
+public static void insertionSort(int arr[]) {
+    for(int i=1; i<arr. length; i++) {
+    int curr = arr[i];
+    int prev = i-1;
+
+        //finding out the correct pos to insert
+        while(prev >=0 && arr[prev] > curr) {
+        arr[prev+1] = arr[prev];
+        prev --;
+        }
+
+    //insertion
+    arr[prev+1] = curr;
+
+    }
+}
+
    
 
     public static void main(String args[]){
 
         int arr[]={5,2,3,1,4};
-        int a2[]={1,2,3,4,5};
+        //int a2[]={1,2,3,4,5};
        /*  bubbleSort(arr);
         printArr(arr);
         bubbleSort(a2); */
-        selectionSort(arr);
+       // selectionSort(arr);
+        insertionSort(arr);
         printArr(arr);
 
 
