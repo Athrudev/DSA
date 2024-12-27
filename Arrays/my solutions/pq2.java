@@ -18,6 +18,9 @@ import java.util.*;
 
 public class pq2 {
 
+
+    //i use the linear search approach to solve this problem which has complexity of O(n);
+    //there is a better searching technique to solve this problem i.e. binary search which has time complexity of O(log n);
     public static int solution(int nums[],int target){
         int n=nums.length;
         int min=0;
@@ -36,6 +39,15 @@ public class pq2 {
         }
     }
 
+
+
+
+    //optimized solution
+
+    
+
+
+
     public static void main(String[] args) {
 
         //test case 1
@@ -50,22 +62,22 @@ public class pq2 {
         int nums3[]={1};
         int target3=0;
 
-        long starttime=System.nanoTime();
+        //long starttime=System.nanoTime();
         System.out.println("test case 1:"+solution(nums1,target1)); // output=4
-        long endtime=System.nanoTime();
-        long duration=endtime-starttime;
-        System.out.println("duration:"+duration);
+        //long endtime=System.nanoTime();
+        //long duration=endtime-starttime;
+        //System.out.println("duration:"+duration);
         
 
-        starttime=System.nanoTime();
+        //starttime=System.nanoTime();
         System.out.println("test case 2:"+solution(nums2,target2)); //outoput=-1
-        endtime=System.nanoTime();
-        System.out.println("duration:"+duration);
+        //endtime=System.nanoTime();
+       //System.out.println("duration:"+duration);
 
-        starttime=System.nanoTime();
+        //starttime=System.nanoTime();
         System.out.println("test case 3:"+solution(nums3,target3)); //output=-1
-        endtime=System.nanoTime();
-        System.out.println("duration:"+duration);
+        //endtime=System.nanoTime();
+        //System.out.println("duration:"+duration);
         
     }
 }
