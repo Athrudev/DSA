@@ -7,6 +7,8 @@ achieve any profit, return 0. */
 
 public class pq3 {
 
+    //this solution is the optimized solution that i solved
+
     public static int solution(int price[]){
 
         int n=price.length;
