@@ -1,4 +1,9 @@
 
+/*Given an integer array nums, return true if any value appears at least twice in the
+array, and return false if every element is distinct.
+
+*/
+
 
 public class pq1 {
 
@@ -12,13 +17,14 @@ public class pq1 {
             int current=nums[i];
             for(int j=i+1;j<n;j++){
                 if(current==nums[j]){
-                    found=true;
-                    break;
+                   /*  found=true;
+                    break; */
+                    return true;
                 }
             }
         }
         
-        return found;
+        return false;
     }
 
 

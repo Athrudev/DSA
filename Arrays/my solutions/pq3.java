@@ -1,3 +1,9 @@
+/* Question 3: You are given an array prices where prices[i] is the price of a given stock on
+the ith day.
+
+return the maximum profit you can achieve from this transaction, If you cannot
+achieve any profit, return 0. */
+
 
 public class pq3 {
 
@@ -24,8 +30,8 @@ public class pq3 {
         int price1[]={7,1,5,6,3,4};
         int price2[]={7,6,4,3,1};
 
-        System.out.println("test case 1:"+solution(price1));
-        System.out.println("test case 2:"+solution(price2));
+        System.out.println("test case 1:"+solution(price1));  //output=5
+        System.out.println("test case 2:"+solution(price2));  //output=0
         
     }
 }

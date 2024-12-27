@@ -1,3 +1,18 @@
+/*
+
+Question 2: There is an integer array nums sorted in ascending order (with distinct values).
+Prior to being passed to your function, nums is possibly rotated at an unknown
+pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k],
+nums[k+1], ... , nums[n-1], nums[0], nums[1], ... , nums[k-1]] (0-indexed). For
+at
+
+Given the array nums after the possible rotation and an integer target, return the
+index of target if it is in nums, or -1 if it is not in nums.
+You must write an algorithm with O(log n) runtime complexity.
+
+*/
+
+
 
 import java.util.*;
 
@@ -36,19 +51,19 @@ public class pq2 {
         int target3=0;
 
         long starttime=System.nanoTime();
-        System.out.println("test case 1:"+solution(nums1,target1));
+        System.out.println("test case 1:"+solution(nums1,target1)); // output=4
         long endtime=System.nanoTime();
         long duration=endtime-starttime;
         System.out.println("duration:"+duration);
         
 
         starttime=System.nanoTime();
-        System.out.println("test case 2:"+solution(nums2,target2));
+        System.out.println("test case 2:"+solution(nums2,target2)); //outoput=-1
         endtime=System.nanoTime();
         System.out.println("duration:"+duration);
 
         starttime=System.nanoTime();
-        System.out.println("test case 3:"+solution(nums3,target3));
+        System.out.println("test case 3:"+solution(nums3,target3)); //output=-1
         endtime=System.nanoTime();
         System.out.println("duration:"+duration);
         
