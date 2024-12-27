@@ -2,7 +2,7 @@ package sort;
 
 public class basicSort {
 
-    public static void swap(int a[],int i,int j){
+    public static void swapArr(int a[],int i,int j){
         int temp=a[i];
         a[i]=a[j];
         a[j]=temp;
@@ -12,10 +12,16 @@ public class basicSort {
         int n=a.length;
 
         for(int i=0;i<n-1;i++){
+            int swap=0;
             for(int j=0;j<n-1-i;j++){
                 if(a[j]>a[j+1]){
-                    swap(a,j,j+1);
+                    swapArr(a,j,j+1);
+                    swap++;
                 }
+            }
+            if(swap==0 && i==0){
+                System.out.println("already sorted");
+                break;
             }
         }
 
@@ -32,8 +38,10 @@ public class basicSort {
     public static void main(String args[]){
 
         int arr[]={5,2,3,1,4};
+        int a2[]={1,2,3,4,5};
         bubbleSort(arr);
         printArr(arr);
+        bubbleSort(a2);
 
 
     }
