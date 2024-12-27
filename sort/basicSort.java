@@ -1,4 +1,5 @@
 package sort;
+import java.util.*;
 
 public class basicSort {
 
@@ -87,8 +88,15 @@ public static void insertionSort(int arr[]) {
        /*  bubbleSort(arr);
         printArr(arr);
         bubbleSort(a2); */
-       // selectionSort(arr);
-        insertionSort(arr);
+
+        //selectionSort(arr);
+        //insertionSort(arr);
+
+        //all the above algorithm takes time complexity of O(n^2) which is not optimized algorihtm's
+
+        //inbuilt sorting in java time complexit = O(log n)
+        //this method is present in the java.util.Arrays package
+        Arrays.sort(arr);
         printArr(arr);
 
 
