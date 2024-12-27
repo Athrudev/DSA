@@ -10,6 +10,12 @@ import java.util.*;
 
 public class pq4 {
 
+
+    //this solution uses the left max boundary and right max boundary apporoach that takes 
+    //time complexity of O(n) and space complexity of O(n)
+
+    //mam provided the two pointer approach it has same time complaity but the space com. is O(1)
+
     public static int solution(int h[]){
 
         int n=h.length;
