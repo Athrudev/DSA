@@ -1,0 +1,12 @@
+9. patterns ✅
+10 function 
+11 patterns (II)✅
+12 Arrays ✅
+13 basic sorting algorithms ✅
+14 
+15 2D array
+16.string
+17. bit manipulation
+18.OOP
+19.Recursion
+20.Divide and conquer
