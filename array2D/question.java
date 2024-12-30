@@ -76,7 +76,9 @@ public class question {
         int m=a[0].length;
 
         int sum=0;
-        for(int i=0;i<n;i++){
+
+        //this is brute force approach
+        /* for(int i=0;i<n;i++){ //this takes time complexity of O(n^2)
             for(int j=0;j<m;j++){
                 if(i==j){ // condition for primary diagonal
                     sum+=a[i][j];
@@ -86,7 +88,20 @@ public class question {
                     sum+=a[i][j];
                 }
             }
+        } */
+
+
+        //optimized approach
+
+        for(int i=0;i<n;i++){
+            //primary diagonal
+            sum+=a[i][i];
+
+            //secondary diagonal
+            if(i!=n-1-i)
+                sum+=a[i][n-i-1];
         }
+
         return sum;
     }
     public static void main(String[] args) {
