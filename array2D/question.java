@@ -104,12 +104,40 @@ public class question {
 
         return sum;
     }
+
+
+
+    public static boolean staircaseSearch(int a[][],int key){
+        int n=a.length,m=a[0].length;
+        int row=0;
+        int col=m-1;
+
+        while(row<n && col>=0){
+            if(a[row][col]==key){
+                System.out.println("Found at place: ("+row+","+col+")");
+                return true;
+                
+            }else if(key<a[row][col]){
+                col--;
+            }else{
+                row++;
+            }
+        }
+
+        System.out.println("Element not found");
+        return false;
+        
+    }
+
     public static void main(String[] args) {
 
         int matrix[][]={{1,2,3,4},
                           {5,6,7,8},
                         {9,10,11,12},
                     {13,14,15,16}};
+        
+        Scanner sc=new Scanner(System.in);
+
 
         System.out.println("original Matrix:");
         displayArray(matrix);
@@ -119,6 +147,15 @@ public class question {
         
 
         System.out.println("\n\nDiagonal sum:"+DiagonalSum(matrix));
+
+
+        int key;
+        System.out.println("Enter key to be search:");
+        key=sc.nextInt();
+        
+
+        System.out.println(staircaseSearch(matrix,key));
+        
         
         
         
