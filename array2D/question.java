@@ -92,7 +92,7 @@ public class question {
 
 
         //optimized approach
-
+        //this approach takes time complexity of O(n^2)
         for(int i=0;i<n;i++){
             //primary diagonal
             sum+=a[i][i];
