@@ -1,7 +1,7 @@
 package array2D;
 import java.util.*;
 
-public class spiral {
+public class question {
 
     public static void spiralArray(int a[][]){
 
@@ -66,6 +66,29 @@ public class spiral {
         }
     }
 
+
+
+
+
+    public static int DiagonalSum(int a[][]){
+
+        int n=a.length;
+        int m=a[0].length;
+
+        int sum=0;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(i==j){ // condition for primary diagonal
+                    sum+=a[i][j];
+                }
+
+                else if((i+j)==n-1){  //condition for secondary diagonal
+                    sum+=a[i][j];
+                }
+            }
+        }
+        return sum;
+    }
     public static void main(String[] args) {
 
         int matrix[][]={{1,2,3,4},
@@ -78,6 +101,9 @@ public class spiral {
 
         System.out.println("\n\nSpiral Matrix:");
         spiralArray(matrix);
+        
+
+        System.out.println("\n\nDiagonal sum:"+DiagonalSum(matrix));
         
         
         
