@@ -92,7 +92,7 @@ public class question {
 
 
         //optimized approach
-        //this approach takes time complexity of O(n^2)
+        //this approach takes time complexity of O(n)
         for(int i=0;i<n;i++){
             //primary diagonal
             sum+=a[i][i];
@@ -106,7 +106,7 @@ public class question {
     }
 
 
-
+//this searching technique only works on the sorted array
     public static boolean staircaseSearch(int a[][],int key){
         int n=a.length,m=a[0].length;
         int row=0;
