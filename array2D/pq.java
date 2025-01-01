@@ -17,7 +17,7 @@ public class pq {
     }
 
 
-
+    //time complexity = O(n^2)
     //Question 1: Print the number of 7's that are in the 2d array.
     public static int search_num(int a[][],int num){
         int c=0;
@@ -36,7 +36,7 @@ public class pq {
 
     }
 
-
+    //time complexity = O(n)
     //question 2: Print out the sum of the numbers in the second row of the "nums" array.
     public static int sum_rows(int a[][],int row){
 
@@ -51,6 +51,7 @@ public class pq {
     }
 
 
+    //time complexity = O(n^2)
     //question 3: write a program to find a transpose of a matrix
     public static void transpose(int a[][]){
         int n=a.length,m=a[0].length;
