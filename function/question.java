@@ -71,13 +71,13 @@ public class question {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the n: ");
         n=sc.nextInt();
-        /*System.out.print("Enter the r: ");
+        System.out.print("Enter the r: ");
         r=sc.nextInt();
 
         System.out.println("Factorial of "+n+" = "+fact(n));
 
-        System.out.println("Binomial coeffiecient: "+bicoe(n,r));*/
-       // System.out.println(n+" is Prime: "+isPrimeOpt(n));
+        System.out.println("Binomial coeffiecient: "+bicoe(n,r));
+        System.out.println(n+" is Prime: "+isPrimeOpt(n));
 
        System.out.println("All the prime numbers in the range are:");
        PrimeInRange(n);
