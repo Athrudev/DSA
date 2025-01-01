@@ -39,6 +39,7 @@ public class question {
         return true;
     }
 
+    //this is optimized approach for finding the prime of an number
     public static boolean isPrimeOpt(int n){
 
         if(n<=1){
