@@ -74,7 +74,7 @@ public class question {
         System.out.print("Enter the r: ");
         r=sc.nextInt();
 
-        System.out.println("Factorial of "+n+" = "+fact(n));
+        //System.out.println("Factorial of "+n+" = "+fact(n));
 
         System.out.println("Binomial coeffiecient: "+bicoe(n,r));
         System.out.println(n+" is Prime: "+isPrimeOpt(n));
