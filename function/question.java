@@ -54,6 +54,18 @@ public class question {
         return true;
     }
 
+
+
+    public static void PrimeInRange(int n){
+
+        for(int i=2;i<=n;i++){
+            if(isPrimeOpt(i)){
+                System.out.print(i+" ");
+            }
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         int n,r;
         Scanner sc=new Scanner(System.in);
@@ -65,7 +77,11 @@ public class question {
         System.out.println("Factorial of "+n+" = "+fact(n));
 
         System.out.println("Binomial coeffiecient: "+bicoe(n,r));*/
-        System.out.println(n+" is Prime: "+isPrimeOpt(n));
+       // System.out.println(n+" is Prime: "+isPrimeOpt(n));
+
+       System.out.println("All the prime numbers in the range are:");
+       PrimeInRange(n);
+       
         
         
         
