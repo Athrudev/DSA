@@ -66,10 +66,31 @@ public class question {
         System.out.println();
     }
 
+
+
+    public static void binToDec(int binNum){
+        int pow=0;
+        int dec=0;
+
+        int myNum=binNum;
+
+        while(binNum>0){
+            int ld=binNum%10; //to findout the last digit
+            dec+=ld*((int)Math.pow(2,pow)); //dec=last digit * 2^0;
+
+            pow++;
+            binNum=binNum/10; // remove the last digit from the binary number e.g. 101->10
+
+        }
+
+        System.out.println("binary of "+myNum+" = "+dec);
+        
+    }
+
     public static void main(String[] args) {
         int n,r;
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the n: ");
+        /* System.out.print("Enter the n: ");
         n=sc.nextInt();
         System.out.print("Enter the r: ");
         r=sc.nextInt();
@@ -80,7 +101,10 @@ public class question {
         System.out.println(n+" is Prime: "+isPrimeOpt(n));
 
        System.out.println("All the prime numbers in the range are:");
-       PrimeInRange(n);
+       PrimeInRange(n); */
+
+
+       binToDec(1010);
        
         
         
