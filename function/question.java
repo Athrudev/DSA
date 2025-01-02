@@ -87,6 +87,23 @@ public class question {
         
     }
 
+
+    public static void decToBin(int n){
+        int pow=0;
+        int bin=0;
+        int temp=n;
+
+        while(n>0){
+            int rem=n%2;
+            bin+=rem*((int)Math.pow(10,pow));
+            pow++;
+            n=n/2;
+        }
+
+        System.out.println("Decimal of "+temp+" = "+bin);
+        
+    }
+
     public static void main(String[] args) {
         int n,r;
         Scanner sc=new Scanner(System.in);
@@ -105,6 +122,7 @@ public class question {
 
 
        binToDec(1010);
+       decToBin(12);
        
         
         
