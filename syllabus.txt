@@ -1,5 +1,5 @@
 9. patterns ✅
-10 function 
+10 function ✅
 11 patterns (II)✅
 12 Arrays ✅
 13 basic sorting algorithms ✅
