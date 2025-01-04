@@ -72,6 +72,26 @@ public class q {
     }
 
 
+    public static String compress(String s){
+        StringBuilder newStr=new StringBuilder("");
+        int n=s.length();
+
+        for(int i=0;i<n;i++){
+            int c=1;
+            while( i<n-1 && s.charAt(i)==s.charAt(i+1)){
+                c++;
+                i++;
+            }
+            newStr.append(s.charAt(i));
+            if(c>1){
+                newStr.append(c);
+            }
+        }
+
+        return newStr.toString();
+    }
+
+
     public static void main(String args[]){
        /*  String path="WNEENEENNN";
         String path2="NS";
@@ -84,10 +104,15 @@ public class q {
         System.out.println("Largest is: "+largestString(f)); */
 
 
-        String s="hi, i am Atharva";
+        /* String s="hi, i am Atharva";
         System.out.println(s);
         
-        System.out.println(FirstLetterCapital(s));
+        System.out.println(FirstLetterCapital(s)); */
+
+
+        String s="aaabbcccc";
+        System.out.println(compress(s));
+        
         
         
     }
