@@ -11,6 +11,26 @@ public class basics{
         
     }
 
+
+    public static boolean isPal(String s){
+        System.out.println("Checking string: " + s);
+        String temp="";
+        for(int i=s.length()-1;i>=0;i--){
+        temp+=s.charAt(i);
+        }
+
+
+    //we can't use an == for the string comparison because, it compares the refrance for an object
+    /* if(temp==s){
+        return true;
+    } */
+
+    if(temp.equals(s)){
+        return true;
+    }
+    return false;
+}
+
     public static void main(String[] args) {
         char c[]={'a','b','v'};
         String s ="abcd";
@@ -33,6 +53,11 @@ public class basics{
         //we can use the charAt() function to access an each element of an string
 
         printLetters(fullname);
+
+        String pal="nano";
+        System.out.println(pal+" is palindrome: "+isPal(pal));
+        
+
         
     }
 }
