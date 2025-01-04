@@ -1,6 +1,16 @@
 package Strings;
 
 public class basics{
+
+    public static void printLetters(String s){
+        for(int i=0;i<s.length();i++){
+            System.out.print(s.charAt(i)+" ");
+        }
+
+        System.out.println();
+        
+    }
+
     public static void main(String[] args) {
         char c[]={'a','b','v'};
         String s ="abcd";
@@ -20,6 +30,9 @@ public class basics{
         String fullname=fname+" "+lname;
         System.out.println(fullname);
         
+        //we can use the charAt() function to access an each element of an string
+
+        printLetters(fullname);
         
     }
 }
