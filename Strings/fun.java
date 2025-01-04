@@ -2,7 +2,7 @@ package Strings;
 
 public class fun {
     public static void main(String args[]){
-        String s1="abc";
+        /* String s1="abc";
         String s2="abc";
         String s3=new String("abc");
 
@@ -30,9 +30,21 @@ public class fun {
         //sub string inbuilt function
 
         String str="HelloWorld";
-        System.out.println(str.substring(0,5));
-        
+        System.out.println(str.substring(0,5)); */
 
+
+
+        //String builder
+        //it's more memory efficient
+
+        StringBuilder sb=new StringBuilder("");
+        for(char c='a';c<='z';c++){
+            sb.append(c);
+        }
+        //time complexity = O(26)
+        //if we used the normal string class then, O(n^2)
+        System.out.println(sb);
+        
 
     }
 }
