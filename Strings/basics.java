@@ -33,6 +33,9 @@ public class basics{
 }
 
 
+//this function has time complexity of O(n/2) which is less than O(n)
+//O(n/2) < O(n)
+
     public static boolean isPalindrome(String s){
         int n=s.length();
         for(int i=0;i<n/2;i++){
