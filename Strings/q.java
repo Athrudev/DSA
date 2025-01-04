@@ -35,12 +35,29 @@ public class q {
         return (float)(Math.sqrt(X2+Y2));
     }
 
+    public static String largestString(String s[]){
+        int n=s.length;
+        String large=s[0];
+
+        for(int i=0;i<n;i++){
+            if(s[i].compareToIgnoreCase(large)>0){
+                large=s[i];
+            }
+        }
+        return large;
+    }
+
 
     public static void main(String args[]){
-        String path="WNEENEENNN";
+       /*  String path="WNEENEENNN";
         String path2="NS";
         System.out.println("Shortest path: "+shortestPath(path));
         System.out.println("Shortest path: "+shortestPath(path2));
+         */
+
+
+        String f[]={"apple","mango","banana"};
+        System.out.println("Largest is: "+largestString(f));
         
     }
 }
