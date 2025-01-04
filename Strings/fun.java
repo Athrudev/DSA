@@ -23,6 +23,15 @@ public class fun {
         }
         //this is happened because when we don't use an new keyword to create an string it will point to some old string with same content
         //but when you create an string with the new keyword it creates an new memory location
+        //that's why we use equals() to compare the content of both string's, instead of ==
+
+
+
+        //sub string inbuilt function
+
+        String str="HelloWorld";
+        System.out.println(str.substring(0,5));
+        
 
 
     }
