@@ -13,6 +13,13 @@ public class basics{
         System.out.println("length of an string is: "+name.length());
         //in string length is an function that's why there is an parenthesis in the end
         //in arrary, length is an property of an array that's why we don't use parenthesis
+
+        //concatenation
+        String fname="Atharva";
+        String lname="Kamble";
+        String fullname=fname+" "+lname;
+        System.out.println(fullname);
+        
         
     }
 }
