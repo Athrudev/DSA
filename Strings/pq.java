@@ -23,7 +23,7 @@ public class pq {
         s2=s2.toLowerCase();
         
         //1. check if length is correct or not
-        if(s1.length()==s1.length()){
+        if(s1.length()==s2.length()){
             //.convert to array
             char c1[]=s1.toCharArray();
             char c2[]=s2.toCharArray();
