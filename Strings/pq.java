@@ -52,6 +52,9 @@ public class pq {
         
         System.out.println("is anagram: "+isAnagram(s1,s2));
 
+        sc.close();
+        
+
 
 
         
