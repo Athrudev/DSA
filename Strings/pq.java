@@ -1,5 +1,4 @@
 package Strings;
-import java.lang.reflect.Array;
 import java.util.*;
 public class pq {
 
@@ -53,7 +52,7 @@ public class pq {
         System.out.println("is anagram: "+isAnagram(s1,s2));
 
         sc.close();
-        
+
 
 
 
