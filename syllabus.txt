@@ -5,7 +5,7 @@
 13 basic sorting algorithms ✅
 14 
 15 2D array ✅
-16.string
+16.string ✅
 17. bit manipulation
 18.OOP
 19.Recursion
