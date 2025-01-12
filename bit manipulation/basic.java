@@ -7,10 +7,12 @@ public class basic{
         a=sc.nextInt();
         b=sc.nextInt();
 
-        System.out.println(a+" & "+b+" :"+(a&b));
-        System.out.println(a+" | "+b+" :"+(a|b));
-        System.out.println(a+" ^ "+b+" :"+(a^b));
-        System.out.println("~"+a+" :"+(~a));
+        System.out.println(a+" & "+b+" :"+(a&b)); //this is AND operation
+        System.out.println(a+" | "+b+" :"+(a|b)); //this is OR operation
+        System.out.println(a+" ^ "+b+" :"+(a^b)); //this is XOR operation
+        System.out.println("~"+a+" :"+(~a)); //this is one's complement
+
+        sc.close();
         
     }
 }
