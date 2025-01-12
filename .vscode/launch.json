@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "basic",
+            "request": "launch",
+            "mainClass": "basic",
+            "projectName": "dsa_7751c099"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
