@@ -42,6 +42,12 @@ public class q {
     }
 
 
+    public static int clearIBits(int n,int i){
+        int bitMask=(~0)<<i;
+        return n & bitMask;
+    }
+
+
     public static void main(String[] args) {
         OddorEven(3);
         OddorEven(4);
@@ -52,6 +58,7 @@ public class q {
         System.out.println(setIthBit(10, 2));
         System.out.println(clearIthBit(10, 1));
         System.out.println(updateIthBit(10, 2, 1));
+        System.out.println(clearIBits(15, 2));
         
         
     }
