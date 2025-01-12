@@ -68,6 +68,22 @@ public class q {
         return false;
     }
 
+
+
+    public static int fastExpo(int n,int a){
+        int ans=1;
+        while(n>0){
+            if((n&1)!=0){ //checking the LSB 
+                ans=ans*a;
+            }
+            a=a*a;
+            n>>=1;
+        }
+
+        return ans;
+    }
+
+
     public static void main(String[] args) {
        /*  OddorEven(3);
         OddorEven(4);
@@ -80,10 +96,14 @@ public class q {
         System.out.println(updateIthBit(10, 2, 1));
         System.out.println(clearIBits(15, 2));
         System.out.println(clearBitsInRange(10, 2,4)); */
-        System.out.println("4:"+isPowerOfTwo(4));
+
+       /*  System.out.println("4:"+isPowerOfTwo(4));
         System.out.println("9:"+isPowerOfTwo(9));
         System.out.println("12:"+isPowerOfTwo(12));
-        System.out.println("16:"+isPowerOfTwo(16));
+        System.out.println("16:"+isPowerOfTwo(16)); */
+
+        System.out.println(fastExpo(5, 3)); //output = 243
+        
         
         
         
