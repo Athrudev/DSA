@@ -70,6 +70,7 @@ public class q {
 
 
 
+    //this function takes O(log n) time
     public static int fastExpo(int n,int a){
         int ans=1;
         while(n>0){
