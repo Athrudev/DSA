@@ -15,6 +15,8 @@ public class basic{
         System.out.println(a+" | "+b+" :"+(a|b)); //this is OR operation
         System.out.println(a+" ^ "+b+" :"+(a^b)); //this is XOR operation
         System.out.println("~"+a+" :"+(~a)); //this is one's complement
+        System.out.println("5<<2: "+(5<<2));
+        System.out.println("5>>2: "+(5>>2));
 
         sc.close();
         
