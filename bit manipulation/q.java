@@ -58,7 +58,9 @@ public class q {
     public static boolean isPowerOfTwo(int n){
 
     //this is the property of an binary system n is power of two when = n & n-1 is '0';
-    
+    //n=4:   100
+    //n-1=3: 011
+    //4 & 3: 000
 
         if((n & (n-1))==0){
             return true;
