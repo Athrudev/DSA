@@ -55,8 +55,19 @@ public class q {
     }
 
 
+    public static boolean isPowerOfTwo(int n){
+
+    //this is the property of an binary system n is power of two when = n & n-1 is '0';
+    
+
+        if((n & (n-1))==0){
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
-        OddorEven(3);
+       /*  OddorEven(3);
         OddorEven(4);
         OddorEven(480);
         OddorEven(109);
@@ -66,7 +77,12 @@ public class q {
         System.out.println(clearIthBit(10, 1));
         System.out.println(updateIthBit(10, 2, 1));
         System.out.println(clearIBits(15, 2));
-        System.out.println(clearBitsInRange(10, 2,4));
+        System.out.println(clearBitsInRange(10, 2,4)); */
+        System.out.println("4:"+isPowerOfTwo(4));
+        System.out.println("9:"+isPowerOfTwo(9));
+        System.out.println("12:"+isPowerOfTwo(12));
+        System.out.println("16:"+isPowerOfTwo(16));
+        
         
         
     }
